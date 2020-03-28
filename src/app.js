@@ -118,4 +118,4 @@ app.get("*", (req, res) => {
   res.send("404 page not found hihi!");
 });
 console.log("LISTENING PORT 3300");
-app.listen(3300);
+app.listen(process.env.PORT || 3300);
